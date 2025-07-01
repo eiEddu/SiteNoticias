@@ -476,6 +476,11 @@ body.dark-mode a:visited {
   color: #e0e0e0 !important;
 }
 
+body.dark-mode .news-card {
+  background-color: #444;
+  color: white;
+} 
+
 /* Carrossel de cotações */
 .ticker {
   white-space: nowrap; /* Impede quebra de linha */
