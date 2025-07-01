@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts - P1 Notícias</title>
+    <link rel="stylesheet" href="../CSS/SiteNoticias.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header-logo">
+            <img src="../ImageDB/logo.png" alt="Logo do site" class="logo-img">
+            <span class="logo-text">P1<br>Notícias</span>
+        </a>
+        <div class="header-actions">
+            <input id="buscar" type="text" placeholder="Buscar">
+            <a href="assine.html" class="subscribe-btn">ASSINE</a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="main-menu">
+            <li><a class="main-menu-link" href="politica.html">Política</a></li>
+            <li><a class="main-menu-link" href="esportes.html">Esportes</a></li>
+            <li><a class="main-menu-link" href="entretenimento.html">Entretenimento</a></li>
+            <li><a class="main-menu-link" href="mundo.html">Mundo</a></li>
+            <li><a class="main-menu-link" href="economia.html">Economia</a></li>
+            <li><a class="main-menu-link-active" href="podcasts.html">Podcasts</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="title">Podcasts do Momento</h1>
+
+    <div class="podcast-page">
+        <!-- Menu lateral -->
+        <aside class="sidebar">
+            <h3>Temas</h3>
+            <ul>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Entretenimento</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Economia</a></li>
+            </ul>
+        </aside>
+
+        <!-- Grade de podcasts -->
+        <section class="podcast-grid">
+            <div class="podcast-card">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/5E6D08Z5jcE" title="PAULO GUEDES - Flow #271" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                <p class="podcast-title">Entrevista com ministro da Economia</p>
+            </div>
+            <div class="podcast-card">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/qj0N8sb3_XQ" title="RONALDO FENÔMENO - Flow Podcast #515" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="podcast-title">Ronaldo Fenômeno e sua trajetória até a elite do futebol mundial</p>
+            </div>
+            <div class="podcast-card">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/MKzOAOu8Zes" title="PEDRO LOOS (CIÊNCIA TODO DIA) - Inteligência Ltda. Podcast #821" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="podcast-title">Pedro Loos e o futuro da tecnologia</p>
+            </div>
+            <div class="podcast-card">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/f7xRgss2IOQ?list=PLWieWKZeFoVRmUNn9KA2dVpQswo19QkwQ" title="CLÓVIS DE BARROS - Flow #392" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="podcast-title">Entrevista com doutor Clóvis de Barros</p>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 P1 Notícias. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../JS/script.js"></script>
+
+</body>
+</html>

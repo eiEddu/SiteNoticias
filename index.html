@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento -->
+<html lang="pt-br"> <!-- Define o idioma como português -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>P1 - Portal de Notícias</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="CSS/SiteNoticias.css"> <!-- Importa o CSS -->
+</head>
+<body>
+    <header class="header"> <!-- Cabeçalho -->
+        <a href="index.html" class="header-logo"> <!-- Link para voltar à home -->
+            <img src="ImageDB/logo.png" alt="Logo do site" class="logo-img"> <!-- Imagem da logo -->
+            <span class="logo-text">P1<br>Notícias</span> <!-- Texto do logo com quebra de linha -->
+        </a>
+        <div class="header-actions"> <!-- Ações do cabeçalho -->
+            <input id="buscar" type="text" placeholder="Buscar"> <!-- Campo de busca -->
+            <a href="HTML/assine.html" class="subscribe-btn">ASSINE</a> <!-- Botão/link para assinar -->
+        </div>
+    </header>
+
+    <nav class="main-nav"> <!-- Menu principal -->
+        <ul class="main-menu"> <!-- Lista de links -->
+            <li><a class="main-menu-link" href="HTML/politica.html">Política</a></li>
+            <li><a class="main-menu-link" href="HTML/esportes.html">Esportes</a></li>
+            <li><a class="main-menu-link" href="HTML/entretenimento.html">Entretenimento</a></li>
+            <li><a class="main-menu-link" href="HTML/mundo.html">Mundo</a></li>
+            <li><a class="main-menu-link" href="HTML/economia.html">Economia</a></li>
+            <li><a class="main-menu-link" href="HTML/podcasts.html">Podcasts</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="title">Assuntos em Alta</h1> <!-- Título principal da página -->
+
+    <section class="news"> <!-- Seção das notícias -->
+
+        <!-- Notícia principal em destaque -->
+        <article class="news-highlight"><!-- Destaque principal -->
+            <img src="ImageDB/brasilia.jpg" alt="Palácio do Congresso Nacional"> <!-- Imagem da notícia -->
+            <div class="highlight-content">
+                <p class="news-article-description" ><a class="news-article-link" href=""> CCJ do Senado aprova fim da reeleição para presidente, prefeitos e governadores.</a></p>
+                <p class="news-article-meta">Política • Brasília • há 18 horas</p>
+            </div>
+        </article>
+
+        <!-- Outras notícias -->
+        <article class="news-article"> <!-- Notícia secundária -->
+            <img class="news-article-image" src="ImageDB/esporte.avif" alt="Equipe do grêmio">
+            <div class="news-article-content">
+                <p class="news-article-description-sec"><a class="news-article-link" href="">Maré de azar, erros de arbitragem e despreparo técnico: Entenda a má fase do grêmio na temporada 2025</a></p>
+                <p class="news-article-meta">Esportes • Porto Alegre • há 3 horas</p>
+            </div>
+        </article>
+
+        <!-- As próximas seguem o mesmo padrão -->
+        <article class="news-article">
+            <img class="news-article-image" src="ImageDB/USA.jpg" alt="Bandeira americana">
+            <div class="news-article-content">
+                <p class="news-article-description-sec"><a class="news-article-link" href="">Juiz dos EUA impede governo Trump de cancelar vistos de estudantes estrangeiros</a></p>
+                <p class="news-article-meta">Mundo • Nova York • há 5 horas</p>
+            </div>
+        </article>
+        <article class="news-article">
+            <img class="news-article-image" src="ImageDB/haymitch.avif" alt="Imagem do ator Woody Harrelson">
+            <div class="news-article-content">
+                <p class="news-article-description-sec"><a class="news-article-link" href="">'Jogos Vorazes': novo filme terá Ralph Fiennes, Kieran Culkin, Elle Fanning, Woody Harrelson
+ e mais</a></p>
+                <p class="news-article-meta">Entretenimento • Los Angeles • há 2 horas</p>
+            </div>
+        </article>
+        <article class="news-article">
+            <img class="news-article-image" src="ImageDB/images.jpg" alt="Economia - Globo terrestre rodeado por moedas">
+            <div class="news-article-content">
+                <p class="news-article-description-sec"><a class="news-article-link" href="">Como 'cambistas de bets' movimentam mercado ilegal milionário e oferecem apostas até para menores</a></p>
+                <p class="news-article-meta">Economia • Brasil • há 1 hora</p>
+            </div>
+        </article>
+
+    </section>
+
+    <footer class="footer"> <!-- Rodapé -->
+        <p>&copy; 2025 P1 Notícias. Todos os direitos reservados.</p> <!-- Texto do rodapé -->
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>

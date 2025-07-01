@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Tipo de documento -->
+<html lang="pt-br"> <!-- Idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
+    <title>Assine - P1 Notícias</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="../CSS/SiteNoticias.css"> <!-- Importa o CSS -->
+</head>
+<body>
+    <header class="header"> <!-- Cabeçalho -->
+        <a href="../index.html" class="header-logo"> <!-- Voltar para home -->
+            <img src="../ImageDB/logo.png" alt="Logo do site" class="logo-img">
+            <span class="logo-text">P1<br>Notícias</span>
+        </a>
+        <div class="header-actions"> <!-- Campo de busca + botão -->
+            <input id="buscar" type="text" placeholder="Buscar">
+            <a href="../index.html" class="subscribe-btn">Voltar</a>
+        </div>
+    </header>
+
+    <nav class="main-nav"> <!-- Menu principal -->
+        <ul class="main-menu"> <!-- Lista de links -->
+            <li><a class="main-menu-link" href="politica.html">Política</a></li>
+            <li><a class="main-menu-link" href="esportes.html">Esportes</a></li>
+            <li><a class="main-menu-link" href="entretenimento.html">Entretenimento</a></li>
+            <li><a class="main-menu-link" href="mundo.html">Mundo</a></li>
+            <li><a class="main-menu-link" href="economia.html">Economia</a></li>
+            <li><a class="main-menu-link" href="podcasts.html">Podcasts</a></li>
+        </ul>
+    </nav>
+
+    <main class="form-container"> <!-- Container do formulário-->
+        <h2 class="form-title">Formulário de Assinatura</h2>
+
+        <form> <!-- Formulário de assinatura -->
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" class="input-campo" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" class="input-campo" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" class="input-campo" required><br><br>
+
+            <label>Selecionar plano:</label><br>
+
+            <div class="planos"> <!-- Container de planos -->
+                <label class="plano">
+                    <input type="radio" name="plano"> <!--Radio Permite apenas uma seleção dentre as opções-->
+                    <h4>Standard</h4>
+                    <ul>
+                        <li>Acesso às principais notícias</li>
+                        <li>Atualizações diárias</li>
+                    </ul>
+                    <p class="preco">R$ 9,90/mês</p>
+                </label>
+
+                <label class="plano">
+                    <input type="radio" name="plano">
+                    <h4>Gold</h4>
+                    <ul>
+                        <li>Sem anúncios</li>
+                        <li>Conteúdo exclusivo</li>
+                        <li>Podcasts</li>
+                    </ul>
+                    <p class="preco">R$ 19,90/mês</p>
+                </label>
+
+                <label class="plano">
+                    <input type="radio" name="plano">
+                    <h4>Premium</h4>
+                    <ul>
+                        <li>Todos os benefícios</li>
+                        <li>Newsletters personalizadas</li>
+                        <li>Suporte prioritário</li>
+                    </ul>
+                    <p class="preco">R$ 29,90/mês</p>
+                </label>
+            </div><br>
+
+            <label for="pagamento">Forma de pagamento:</label><br>
+            <select id="pagamento" name="pagamento" required class="input-campo">
+                <option>Selecione...</option>
+                <option>Cartão de crédito/débito</option>
+                <option>Pix</option>
+                <option>Boleto bancário</option>
+            </select><br><br>
+
+            <div class="form-buttons"> <!-- Botões lado a lado -->
+                <a href="../index.html" class="btn vermelho">Cancelar</a>
+                <button class="btn azul">Próxima etapa</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer"> <!-- Rodapé -->
+        <p>&copy; 2025 P1 Notícias. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
