@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Validação básica dos campos
             if (!nome.value.trim()) mensagens.push("Nome é obrigatório.");
-            if (!email.value.trim() || !email.includes('@')) mensagens.push("E-mail válido é obrigatório.");
+            if (!email.value.trim() || !email.value.includes('@')) mensagens.push("E-mail válido é obrigatório.");
             if (!telefone.value.trim()) mensagens.push("Telefone é obrigatório.");
             if (!planoSelecionado) mensagens.push("Selecione um plano.");
             if (!pagamento.value || pagamento.value === "Selecione...") mensagens.push("Escolha uma forma de pagamento.");

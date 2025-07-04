@@ -447,7 +447,7 @@ body.dark-mode .btn.azul {
 body.dark-mode .btn.azul:hover,
 body.dark-mode .btn.vermelho:hover {
   background-color: white;
-  color: #003366;
+  color: #660000;
 }
 
 body.dark-mode .btn.vermelho {
