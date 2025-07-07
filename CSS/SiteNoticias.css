@@ -1,70 +1,78 @@
+/* =========================== */
+/* ========== GERAL ========== */
+/* =========================== */
+
 body {
-  font-family: Arial, sans-serif; /* Define a fonte do texto */
-  margin: 0; /* Remove margens da página */
-  padding: 0; /* Remove preenchimento da página */
-  background-color: #f5f5f5; /* Cor de fundo da página */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
+/* =========================== */
+/* ====== HEADER + MENU ====== */
+/* =========================== */
+
 .header {
-  display: flex; /* Organiza os elementos em linha */
-  justify-content: space-between; /* Espaça os elementos ao máximo */
-  align-items: center; /* Alinha verticalmente ao centro */
-  background-color: #003366; /* Cor de fundo do cabeçalho */
-  color: white; /* Cor do texto no cabeçalho */
-  padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
 }
 
 .header-logo {
-  display: flex; /* Alinha logo e texto lado a lado */
+  display: flex;
   align-items: center;
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none;
   color: white;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2;
-  gap: 10px; /* Espaço entre imagem e texto da logo */
+  gap: 10px;
 }
 
 .logo-img {
-  width: 80px; /* Largura da imagem da logo */
-  height: auto; /* Altura ajustada automaticamente */
+  width: 80px;
+  height: auto;
 }
 
 .header-actions {
   display: flex;
-  gap: 10px; /* Espaço entre busca e botão */
+  gap: 10px;
   align-items: center;
 }
 
 .header-actions input {
-  padding: 6px; /* Espaçamento interno no campo de busca */
+  padding: 6px;
   border: none;
-  border-radius: 4px; /* Cantos arredondados */
+  border-radius: 4px;
 }
 
 .subscribe-btn {
-  background-color: white; /* Cor de fundo do botão */
-  color: #003366; /* Cor do texto */
+  background-color: white;
+  color: #003366;
   border: none;
-  padding: 6px 12px; /* Espaço interno */
+  padding: 6px 12px;
   font-weight: bold;
   border-radius: 4px;
-  cursor: pointer; /* Cursor de clique */
-  transition: background-color 0.3s; /* Efeito de transição */
+  cursor: pointer;
+  transition: background-color 0.3s;
   text-decoration: none;
 }
 
 .subscribe-btn:hover {
-  background-color: #eee; /* Muda a cor ao passar o mouse */
+  background-color: #eee;
 }
 
 .main-nav {
   background-color: white;
-  border-bottom: 1px solid #ccc; /* Linha inferior */
+  border-bottom: 1px solid #ccc;
 }
 
 .main-menu {
-  list-style: none; /* Remove marcadores da lista */
+  list-style: none;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -101,6 +109,10 @@ body {
   border-radius: 4px;
 }
 
+/* =========================== */
+/* ========= HOMEPAGE ======== */
+/* =========================== */
+
 .title {
   text-align: center;
   padding: 20px;
@@ -117,23 +129,16 @@ body {
   padding: 20px;
 }
 
-.news-highlight,
-.news-article,
-.podcast-card,
-.sidebar,
-.form-container {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ao redor do elemento */
-  overflow: hidden;
-}
-
 .news-highlight {
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 900px;
   margin-bottom: 30px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .news-highlight img {
@@ -145,11 +150,42 @@ body {
   padding: 15px;
 }
 
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* =========================== */
+/* ====== NOTÍCIAS SEC ====== */
+/* =========================== */
+
 .news-article {
   display: flex;
   width: 600px;
   margin: 10px;
   text-decoration: none;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .news-article-image {
@@ -185,45 +221,100 @@ body {
   color: #888;
 }
 
-.footer {
-  text-align: center;
+/* =========================== */
+/* ========= PODCASTS ========= */
+/* =========================== */
+
+.podcast-page {
+  display: flex;
   padding: 20px;
-  background-color: #222;
-  color: white;
-  margin-top: 30px;
+  gap: 20px;
 }
 
-.btn {
-  padding: 10px 20px;
-  border: none;
-  font-weight: bold;
-  text-decoration: none;
+.sidebar {
+  width: 180px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: white;
   border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  color: white;
-  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.podcast-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.podcast-card iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  height: auto;
+}
+
+.podcast-title {
+  padding: 15px 20px;
   text-align: center;
+  word-break: break-word;
+  font-size: 16px;
 }
 
-.btn.azul {
-  background-color: #003366;
-}
+/* =========================== */
+/* ======= FORMULÁRIO ======== */
+/* =========================== */
 
-.btn.azul:hover {
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
   background-color: white;
-  color: #003366;
-  border: 1px solid #003366;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.btn.vermelho {
-  background-color: #660000;
-}
-
-.btn.vermelho:hover {
-  background-color: white;
+.form-title {
+  text-align: center;
   color: #003366;
-  border: 1px solid #003366;
 }
 
 .input-campo {
@@ -285,111 +376,63 @@ body {
   margin-top: auto;
 }
 
-.form-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.form-title {
-  text-align: center;
-  color: #003366;
-}
-
 .form-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.podcast-page {
-  display: flex;
+/* =========================== */
+/* ========== FOOTER ========= */
+/* =========================== */
+
+.footer {
+  text-align: center;
   padding: 20px;
-  gap: 20px;
+  background-color: #222;
+  color: white;
+  margin-top: 30px;
 }
 
-.sidebar {
-  width: 180px;
-  padding: 15px;
-  font-size: 16px;
-}
+/* =========================== */
+/* ========== BOTÕES ========= */
+/* =========================== */
 
-.sidebar h3 {
-  margin-top: 0;
-  color: #003366;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  color: #003366;
+.btn {
+  padding: 10px 20px;
+  border: none;
   font-weight: bold;
-}
-
-.sidebar ul li a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-.podcast-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-  gap: 20px;
-  max-width: 1000px; /* largura máxima para não ultrapassar a tela */
-  margin: 0 auto; /* centraliza horizontalmente */
-  padding-bottom: 40px; /* espaço do rodapé */
-}
-
-.podcast-card {
-  display: flex;
-  flex-direction: column;
-  width: 100%; /* ocupa toda a coluna da grid */
-}
-
-.podcast-card iframe {
-  width: 100%;
-  aspect-ratio: 16/9; /* mantém proporção e evita esticar */
-  display: block;
-  height: auto;
-}
-
-.podcast-title {
-  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+  display: inline-block;
   text-align: center;
-  word-break: break-word;
-  font-size: 16px;
 }
 
-.news-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Espaço entre os cards */
-  padding: 20px;
+.btn.azul {
+  background-color: #003366;
 }
 
-.news-card {
+.btn.azul:hover {
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  overflow: hidden;
-  text-align: center;
+  color: #003366;
+  border: 1px solid #003366;
 }
 
-.news-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.btn.vermelho {
+  background-color: #660000;
 }
+
+.btn.vermelho:hover {
+  background-color: white;
+  color: #003366;
+  border: 1px solid #003366;
+}
+
+/* =========================== */
+/* ======= DARK MODE ========= */
+/* =========================== */
 
 body.dark-mode {
   background-color: #121212;
@@ -441,7 +484,7 @@ body.dark-mode .subscribe-btn:hover {
 }
 
 body.dark-mode .btn.azul {
-  background-color: #0055cc;
+  background-color: #66ccff;
 }
 
 body.dark-mode .btn.azul:hover,
@@ -479,12 +522,27 @@ body.dark-mode a:visited {
 body.dark-mode .news-card {
   background-color: #444;
   color: white;
-} 
+}
 
-/* Carrossel de cotações */
+body.dark-mode .plano input:checked ~ * {
+  color: #66ccff;
+}
+
+body.dark-mode .plano input:checked ~ .preco {
+  color: #66ccff; 
+}
+
+body.dark-mode .plano:hover {
+  border-color: #66ccff; 
+}
+
+/* =========================== */
+/* ======= CARROSSEL ========= */
+/* =========================== */
+
 .ticker {
-  white-space: nowrap; /* Impede quebra de linha */
-  overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+  white-space: nowrap;
+  overflow: hidden;
   display: flex;
   gap: 40px;
   background-color: #ffffff;
@@ -498,12 +556,12 @@ body.dark-mode .news-card {
 }
 
 .ticker-item {
-  flex: 0 0 auto; /* Mantém largura fixa */
+  flex: 0 0 auto;
   padding: 0 20px;
   font-size: 16px;
 }
 
 body.dark-mode .ticker {
-  background-color: #1a1a1a; /* Fundo escuro */
-  color: #e0e0e0; /* Texto claro */
+  background-color: #1a1a1a;
+  color: #e0e0e0;
 }
